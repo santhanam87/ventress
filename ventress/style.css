@@ -193,6 +193,7 @@
     color: #141a26;
     padding: 2rem 0;
     line-height: 4rem;
+    text-transform: uppercase;
   }
   .pageHeader .primaryNavigation li {
     display: inline-block;

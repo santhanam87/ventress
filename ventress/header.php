@@ -10,7 +10,7 @@
 		<div id="root">
 			<div class="topBand"></div>
 			<header class="pageHeader">
-				<h1 class="siteTitle">SANTHANAM BLOG</h1>
+				<h1 class="siteTitle"><?php echo get_bloginfo('name'); ?></h1>
 				<nav class="primaryNavigation">
                     <?php
                         wp_nav_menu(

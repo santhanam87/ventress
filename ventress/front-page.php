@@ -48,10 +48,11 @@
 				if(have_posts()){
 					while(have_posts()){
 						the_post();
-						the_content();
+						get_template_part('template-parts/content', 'archive');
 					}	
 				}
 			?>
+			<?php the_posts_pagination() ?>
 			<!-- <article class="articleContainer">
 				<h3 class="articleHeader">
 					<a href="#"
