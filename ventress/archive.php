@@ -11,7 +11,9 @@
 					}	
 				}
 			?>
-            <?php the_posts_pagination() ?>
+            <section class="postPagination">
+				<?php the_posts_pagination() ?>
+			</section>
 		</div>
 		<div class="pageCategories">
 			<h2 class="sectionTitle">Categories</h2>

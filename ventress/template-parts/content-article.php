@@ -1,4 +1,7 @@
 <article class="articleContainer">
+    <h3 class="articleHeader">
+        <?php the_title(); ?>
+    </h3>
     <div class="articleMetaInfo">
         <div class="authorInfo">
             <h1 class="authorName">
@@ -12,9 +15,6 @@
             </ul>
         </nav>
     </div>
-    <h3 class="articleHeader">
-        <?php the_title(); ?>
-    </h3>
     <div class="articleContent">
         <?php the_content(); ?>
     </div>

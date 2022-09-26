@@ -10,7 +10,8 @@
 		<div id="root">
 			<div class="topBand"></div>
 			<header class="pageHeader">
-				<h1 class="siteTitle"><?php echo get_bloginfo('name'); ?></h1>
+				<h1 class="siteTitle"><a href="<?php echo get_home_url();?>"><?php echo get_bloginfo('name'); ?></a></h1>
+				<div class="searchSection"><?php get_search_form(); ?></div>
 				<nav class="primaryNavigation">
                     <?php
                         wp_nav_menu(
