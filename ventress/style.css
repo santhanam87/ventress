@@ -1,0 +1,512 @@
+/*
+Theme Name: Ventress Theme
+Author: Santhanam Elumalai
+Author URI: https://santhaname.com/
+Description: Simple personal blog
+Version: 3.0
+*/
+
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/components/blogPages/styles.scss ***!
+  \**************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto:wght@100;300;500;900&display=swap);
+/*!******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/components/blogPages/styles.scss (1) ***!
+  \******************************************************************************************************************************************/
+@charset "UTF-8"; /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Roboto", serif;
+}
+
+.pageContainer {
+  padding: 0 2rem;
+}
+
+.topBand {
+  height: 0.5rem;
+  background-color: #2f864d;
+}
+
+.topBand::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: #39a25e;
+}
+
+.inlineList ul li, .pageArticles .articleContainer .articleFooter .tagNavigation ul li, .pageArticles .articleContainer .articleMetaInfo .tagList ul li {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.inlineList ul li ::after, .pageArticles .articleContainer .articleFooter .tagNavigation ul li ::after, .pageArticles .articleContainer .articleMetaInfo .tagList ul li ::after {
+  content: ",";
+}
+.inlineList ul li a, .pageArticles .articleContainer .articleFooter .tagNavigation ul li a, .pageArticles .articleContainer .articleMetaInfo .tagList ul li a {
+  text-decoration: none;
+  color: #141a26;
+}
+.inlineList ul li a:hover, .pageArticles .articleContainer .articleFooter .tagNavigation ul li a:hover, .pageArticles .articleContainer .articleMetaInfo .tagList ul li a:hover {
+  text-decoration: underline;
+  color: #2f864d;
+}
+.inlineList ul li:last-child ::after, .pageArticles .articleContainer .articleFooter .tagNavigation ul li:last-child ::after, .pageArticles .articleContainer .articleMetaInfo .tagList ul li:last-child ::after {
+  content: "";
+}
+
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.pageHeader .siteTitle {
+  font-family: "Fredericka the Great", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  color: #141a26;
+  padding: 2rem 0 1rem 0;
+  line-height: 4rem;
+}
+.pageHeader .siteTitle a {
+  text-decoration: none;
+  color: inherit;
+}
+.pageHeader .searchSection {
+  width: 90%;
+  margin-bottom: 2rem;
+}
+.pageHeader .searchSection input[type=text] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #141a26;
+  background-color: #f5f5f5;
+  border: none;
+  border-bottom: 1px solid #e4e4e4;
+  color: #141a26;
+}
+.pageHeader .searchSection input[type=text]::placeholder {
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.pageHeader .searchSection input[type=text]:focus {
+  border: none;
+  outline-width: 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+.pageHeader .primaryNavigation li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.pageHeader .primaryNavigation li > a {
+  color: #141a26;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.pageHeader .primaryNavigation li > a:hover {
+  color: #2f864d;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+blockquote {
+  display: block;
+  margin: 2rem 0;
+  background-color: #e4e4e4;
+  padding: 1rem 1.5rem;
+  color: #141a26;
+  border-left: 0.5rem #2f864d solid;
+}
+blockquote p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.pageBody {
+  margin: 2rem 0;
+}
+
+.sectionTitle {
+  font-family: "Fredericka the Great", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #141a26;
+  padding: 2rem 0;
+  text-transform: uppercase;
+}
+
+.pageArticles .articleContainer {
+  margin-bottom: 3rem;
+}
+.pageArticles .articleContainer .articleMetaInfo {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.pageArticles .articleContainer .articleMetaInfo .authorInfo {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.pageArticles .articleContainer .articleMetaInfo .authorInfo .authorName {
+  margin-bottom: 0.7rem;
+}
+.pageArticles .articleContainer .articleMetaInfo .authorInfo .authorName a {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #141a26;
+}
+.pageArticles .articleContainer .articleHeader {
+  color: #2f864d;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+.pageArticles .articleContainer .articleHeader a {
+  color: inherit;
+}
+.pageArticles .articleContainer .articleContent h1,
+.pageArticles .articleContainer .articleContent h2,
+.pageArticles .articleContainer .articleContent h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #141a26;
+  margin: 1.5rem 0;
+  text-decoration: none;
+}
+.pageArticles .articleContainer .articleContent h1 a,
+.pageArticles .articleContainer .articleContent h2 a,
+.pageArticles .articleContainer .articleContent h3 a {
+  color: inherit;
+}
+.pageArticles .articleContainer .articleContent h1 a:hover,
+.pageArticles .articleContainer .articleContent h2 a:hover,
+.pageArticles .articleContainer .articleContent h3 a:hover {
+  text-decoration: underline;
+}
+.pageArticles .articleContainer .articleContent p {
+  font-size: 1.3rem;
+  color: #141a26;
+  line-height: 2.5rem;
+  font-weight: 100;
+  margin: 1.5rem 0;
+}
+.pageArticles .articleContainer .articleContent p code {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background-color: #141a26;
+  color: #f5f5f5;
+  border-radius: 0.2rem;
+  font-weight: 300;
+  margin: 0.3rem 0;
+}
+.pageArticles .articleContainer .articleContent ul,
+.pageArticles .articleContainer .articleContent ol {
+  padding-left: 1rem;
+  border-top: 1px solid transparent;
+}
+.pageArticles .articleContainer .articleContent ul li,
+.pageArticles .articleContainer .articleContent ol li {
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.pageArticles .articleContainer .articleContent ul li::before,
+.pageArticles .articleContainer .articleContent ol li::before {
+  content: "►";
+  display: inline-block;
+  margin-right: 0.7rem;
+  font-size: 0.7rem;
+  color: #2f864d;
+}
+.pageArticles .articleContainer .articleFooter {
+  display: flex;
+}
+.pageArticles .articleContainer .articleFooter time {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-right: 0.5rem;
+}
+.pageArticles .postPagination .nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 0 1rem;
+  font-size: 1.3rem;
+}
+.pageArticles .postPagination .nav-links .prev,
+.pageArticles .postPagination .nav-links .next {
+  display: none;
+}
+.pageArticles .postPagination .nav-links a,
+.pageArticles .postPagination .nav-links span {
+  display: inline-block;
+  padding: 1.2rem 1.5rem;
+  background-color: #e4e4e4;
+  color: #141a26;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.pageArticles .postPagination .nav-links a:hover,
+.pageArticles .postPagination .nav-links .current {
+  background-color: #2f864d;
+  color: #f5f5f5;
+}
+
+.categoryNavigation {
+  margin: 1rem 0;
+}
+.categoryNavigation ul {
+  text-align: center;
+}
+.categoryNavigation ul li {
+  display: inline-block;
+  margin: 0 1rem 1rem 0;
+}
+.categoryNavigation ul li a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid #49a078;
+  color: #2f864d;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.categoryNavigation ul li a:hover {
+  background-color: #2f864d;
+  color: #f5f5f5;
+}
+
+.pageFooter {
+  background-color: #2f864d;
+  padding: 2rem 3rem;
+}
+.pageFooter .powerdByText {
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #f5f5f5;
+  margin: 1rem 0;
+}
+.pageFooter .footerAuthorName {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 2.5rem;
+}
+.pageFooter .footerAuthorDescription {
+  margin: 0.2rem 0;
+  font-weight: 100;
+  color: #141a26;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.pageFooter .footerNavigation {
+  padding: 2rem 0;
+}
+.pageFooter .footerNavigation ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.pageFooter .footerNavigation ul li a {
+  text-decoration: none;
+  color: #f5f5f5;
+  text-transform: uppercase;
+}
+.pageFooter .footerNavigation ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .pageContainer {
+    padding: 0;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .pageBody {
+    display: flex;
+  }
+  .pageArticles {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 350px;
+  }
+  .pageArticles .articleContainer .articleMetaInfo {
+    flex-direction: row;
+  }
+  .pageArticles .articleContainer .articleMetaInfo .authorInfo {
+    margin-bottom: 0;
+  }
+  .pageCategories {
+    margin-left: 2rem;
+    padding-left: 2rem;
+    border-left: 1px solid #e4e4e4;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-basis: 350px;
+  }
+  .sectionTitle {
+    text-align: left;
+  }
+  .categoryNavigation ul {
+    text-align: left;
+  }
+  .pageHeader .searchSection {
+    width: 768px;
+  }
+}
