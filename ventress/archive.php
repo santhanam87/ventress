@@ -29,6 +29,8 @@
 				);
 				?>
 			</nav>
+			<h2 class="sectionTitle">Search</h2>
+			<div class="searchSection"><?php get_search_form(); ?></div>
 		</div>
 	</main>
 </div>			
